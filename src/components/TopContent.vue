@@ -1,5 +1,5 @@
 <template>
-  <div class="h-[512px] w-full rounded-3xl flex flex-row bg-accent text-custom-black">
+  <div class="h-[512px] w-full rounded-3xl flex flex-row bg-accent text-custom-black mb-24">
     <div class="w-1/2 p-12 max-w-[600px]">
       <h1 class="text-6.5xl leading-[64px] font-extrabold text-black mb-6">
         Buy your dream plants
@@ -16,7 +16,7 @@
       </div>
       <div class="relative">
         <div
-          class="flex rounded-xl items-center justify-center absolute m-auto h-full mr-2 right-0 top-0 bottom-0 h-12 w-12 bg-accent"
+          class="flex rounded-xl items-center justify-center absolute m-auto mr-2 right-0 top-0 bottom-0 h-12 w-12 bg-accent"
         >
           <img src="/icons/search.svg" alt="search" />
         </div>
@@ -28,9 +28,7 @@
       </div>
     </div>
     <div class="relative w-1/2 flex items-end justify-end pr-[72px] ml-auto">
-      <div
-        class="absolute w-[450px] h-[400px] bg-red-300 rounded-full rounded-br-none bg-custom-black"
-      ></div>
+      <div class="absolute w-[450px] h-[400px] rounded-full rounded-br-none bg-custom-black"></div>
       <img class="absolute" src="/top-img.png" alt="" />
     </div>
   </div>
