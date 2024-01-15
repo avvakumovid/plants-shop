@@ -1,6 +1,8 @@
 <script setup>
 import { ref } from 'vue'
 import BestSellingCard from './BestSellingCard.vue'
+import container from './Container.vue'
+import Button from './Button.vue'
 const plants = ref([
   {
     id: 1,
@@ -24,24 +26,23 @@ const plants = ref([
 </script>
 
 <template>
-  <main class="flex flex-row mb-28">
-    <div class="w-96">
-      <h2 class="text-3.5xl text-custom-black font-bold mb-3">Best Selling Plants</h2>
-      <p class="max-w-52 text-lg text-custom-black-200 mb-6">
-        Easiest way to healthy life by buying your favorite plants
-      </p>
-      <button class="flex text-lg bg-accent items-center gap-[10px] py-3 px-5 rounded-lg">
-        See more<img src="/icons/arrow.svg" />
-      </button>
-    </div>
-    <div class="w-full flex flex-row gap-12">
-      <BestSellingCard
-        v-for="plant in plants"
-        :key="plant.id"
-        :image-url="plant.imageUrl"
-        :title="plant.title"
-        :price="plant.price"
-      />
-    </div>
-  </main>
+  <container>
+    <main class="flex flex-row mb-28">
+      <div class="w-96">
+        <h2 class="text-3.5xl text-custom-black font-bold mb-3">Best Selling Plants</h2>
+        <p class="max-w-52 text-lg text-custom-black-200 mb-6">
+          Easiest way to healthy life by buying your favorite plants
+        </p>
+        <Button text="See more" is-accent-bg />
+      </div>
+      <div class="w-full flex flex-row gap-12">
+        <BestSellingCard
+          v-for="plant in plants"
+          :key="plant.id"
+          :image-url="plant.imageUrl"
+          :title="plant.title"
+          :price="plant.price"
+        />
+      </div></main
+  ></container>
 </template>

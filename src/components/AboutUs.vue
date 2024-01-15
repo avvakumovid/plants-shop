@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import AboutUsItem from './AboutUsItem.vue'
+import container from './Container.vue'
 
 const items = ref([
   {
@@ -26,17 +27,19 @@ const items = ref([
 </script>
 
 <template>
-  <section class="text-center text-custom-black text-lg">
-    <h2 class="text-3.5xl mb-3 font-bold">About Us</h2>
-    <p class="text-custom-black-200 mb-12">Order now and appreciate the beauty of nature</p>
-    <ul class="flex flex-row gap-6">
-      <AboutUsItem
-        v-for="item in items"
-        :key="item.id"
-        :title="item.title"
-        :description="item.description"
-        :icon-url="item.iconUrl"
-      />
-    </ul>
-  </section>
+  <container>
+    <section class="text-center text-custom-black text-lg mb-[165px]">
+      <h2 class="text-3.5xl mb-3 font-bold">About Us</h2>
+      <p class="text-custom-black-200 mb-12">Order now and appreciate the beauty of nature</p>
+      <ul class="flex flex-row gap-6">
+        <AboutUsItem
+          v-for="item in items"
+          :key="item.id"
+          :title="item.title"
+          :description="item.description"
+          :icon-url="item.iconUrl"
+        />
+      </ul>
+    </section>
+  </container>
 </template>
