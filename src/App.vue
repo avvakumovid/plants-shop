@@ -4,6 +4,7 @@ import BestSelling from './components/BestSelling.vue'
 import Categories from './components/Categories.vue'
 import TopContent from './components/TopContent.vue'
 import Header from './components/Header.vue'
+import Feedback from './components/Feedback.vue'
 </script>
 
 <template>
@@ -13,10 +14,11 @@ import Header from './components/Header.vue'
     <BestSelling />
     <AboutUs />
     <Categories />
+    <Feedback />
   </div>
 </template>
 
-<style scoped>
+<style>
 /* Hide scrollbar for Chrome, Safari and Opera */
 .container-snap::-webkit-scrollbar {
   display: none;
