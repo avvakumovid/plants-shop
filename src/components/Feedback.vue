@@ -4,7 +4,7 @@ import container from './Container.vue'
 
 <template>
   <container>
-    <div class="relative">
+    <div class="relative h-[800px]">
       <section class="absolute z-50">
         <h2 class="text-3.5xl max-w-lg mb-12 leading-normal font-bold">
           What customers say about GREEMIND?

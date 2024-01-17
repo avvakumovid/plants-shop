@@ -4,6 +4,7 @@ import BestSelling from './components/BestSelling.vue'
 import Categories from './components/Categories.vue'
 import TopContent from './components/TopContent.vue'
 import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
 import Feedback from './components/Feedback.vue'
 </script>
 
@@ -15,6 +16,7 @@ import Feedback from './components/Feedback.vue'
     <AboutUs />
     <Categories />
     <Feedback />
+    <Footer />
   </div>
 </template>
 
