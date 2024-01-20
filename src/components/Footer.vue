@@ -14,17 +14,17 @@ import container from './Container.vue'
             >
             <div class="w-full justify-between items-center flex flex-row gap-x-6">
               <a
-                class="cursor-pointer w-12 h-12 rounded-full border border-custom-black-200 flex justify-center items-center"
+                class="link-icon"
               >
                 <img src="/icons/facebook.svg" alt="facebook" />
               </a>
               <a
-                class="cursor-pointer w-12 h-12 rounded-full border border-custom-black-200 flex justify-center items-center"
+                class="link-icon"
               >
                 <img src="/icons/instagram.svg" alt="instagram" />
               </a>
               <a
-                class="cursor-pointer w-12 h-12 rounded-full border border-custom-black-200 flex justify-center items-center"
+                class="link-icon"
               >
                 <img src="/icons/twitter.svg" alt="twitter" />
               </a>
@@ -32,22 +32,22 @@ import container from './Container.vue'
           </div>
           <div class="flex flex-row gap-x-12 mb">
             <div class="flex flex-col gap-y-6">
-              <span class="font-bold">Information</span>
-              <span>About</span>
-              <span>Product</span>
-              <span>Blog</span>
+              <a  href="" class="font-bold link">Information</a>
+              <a class="link" href="">About</a>
+              <a class="link" href="">Product</a>
+              <a class="link" href="">Blog</a>
             </div>
             <div class="flex flex-col gap-y-6">
-              <span class="font-bold">Company</span>
-              <span>Community</span>
-              <span>Career</span>
-              <span>Our story</span>
+              <a href="" class="font-bold link">Company</a>
+              <a class="link" href="">Community</a>
+              <a class="link" href="">Career</a>
+              <a class="link" href="">Our story</a>
             </div>
             <div class="flex flex-col gap-y-6">
-              <span class="font-bold">Contact</span>
-              <span>Getting Started</span>
-              <span>Pricing</span>
-              <span>Resources</span>
+              <a href="" class="font-bold link">Contact</a>
+              <a class="link" href="">Getting Started</a>
+              <a class="link" href="">Pricing</a>
+              <a class="link" href="">Resources</a>
             </div>
           </div>
         </div>
@@ -56,3 +56,14 @@ import container from './Container.vue'
     </container>
   </footer>
 </template>
+
+<style scoped>
+.link-icon {
+  @apply cursor-pointer w-12 h-12 rounded-full border border-custom-black-200 flex justify-center items-center hover:bg-accent-100 
+}
+
+.link {
+  @apply hover:text-accent-100
+}
+
+</style>

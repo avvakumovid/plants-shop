@@ -1,5 +1,6 @@
 <script setup>
 import container from './Container.vue'
+//TODO: https://phuoc.ng/collection/html-dom/drag-to-scroll/ add scroll grab
 </script>
 
 <template>
@@ -9,7 +10,7 @@ import container from './Container.vue'
         <h2 class="text-3.5xl max-w-lg mb-12 leading-normal font-bold">
           What customers say about GREEMIND?
         </h2>
-        <div class="flex flex-row gap-x-12 overflow-x-scroll w-[100vw] container-snap mb-[230px]">
+        <div class="flex flex-row gap-x-12 overflow-x-scroll visible-scroll w-[100vw] mb-[230px] pb-1 " >
           <div class="flex flex-col min-w-[800px] rounded-xl bg-accent p-12 pb-0">
             <p class="text-custom-black-100 mb-[54px]">
               Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et

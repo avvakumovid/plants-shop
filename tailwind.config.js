@@ -8,6 +8,7 @@ export default {
       },
       colors: {
         accent: '#C1DCDC',
+        'accent-100': '#91b9b9',
         'custom-black': '#1E1E1E',
         'custom-black-100': 'rgba(30, 30, 30, 0.75)',
         'custom-black-200': 'rgba(30, 30, 30, 0.50)'

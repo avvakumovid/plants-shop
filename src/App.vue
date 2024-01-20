@@ -31,4 +31,39 @@ import Feedback from './components/Feedback.vue'
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+.visible-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #C1DCDC #dfe9eb;
+}
+
+/* Chrome, Edge and Safari */
+.visible-scroll::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+.visible-scroll::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #dfe9eb;
+}
+
+.visible-scroll::-webkit-scrollbar-track:hover {
+  background-color: #b8c0c2;
+}
+
+.visible-scroll::-webkit-scrollbar-track:active {
+  background-color: #b8c0c2;
+}
+
+.visible-scroll::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #C1DCDC;
+}
+
+.visible-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #91b9b9;
+}
+
+.visible-scroll::-webkit-scrollbar-thumb:active {
+  background-color: #91b9b9;
+}
 </style>

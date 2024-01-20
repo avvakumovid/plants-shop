@@ -7,7 +7,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="text-lg">
+  <div class="text-lg rounded-xl cursor-pointer ease-in duration-150 p-4 hover:bg-accent hover:bg-opacity-30">
     <a href="#">
       <img :src="imageUrl" alt="title" class="mb-3" />
       <h3 class="mb-2 text-custom-black">{{ title }}</h3>
