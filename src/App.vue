@@ -6,6 +6,7 @@ import TopContent from './components/TopContent.vue'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 import Feedback from './components/Feedback.vue'
+import Drawer from './components/Drawer.vue'
 </script>
 
 <template>
@@ -17,6 +18,7 @@ import Feedback from './components/Feedback.vue'
     <Categories />
     <Feedback />
     <Footer />
+    <!-- <Drawer /> -->
   </div>
 </template>
 

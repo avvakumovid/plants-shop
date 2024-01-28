@@ -8,19 +8,22 @@ const plants = ref([
     id: 1,
     title: 'Natural Plants',
     price: 1400,
-    imageUrl: '/plants-1.png'
+    imageUrl: '/plants-1.png',
+    isAddToCart: false
   },
   {
     id: 2,
     title: 'Plant Accessories',
     price: 900,
-    imageUrl: '/plants-2.png'
+    imageUrl: '/plants-2.png',
+    isAddToCart: true
   },
   {
     id: 3,
     title: 'Artificial Plants',
     price: 3500,
-    imageUrl: '/plants-3.png'
+    imageUrl: '/plants-3.png',
+    isAddToCart: false
   }
 ])
 </script>
@@ -42,6 +45,7 @@ const plants = ref([
           :image-url="plant.imageUrl"
           :title="plant.title"
           :price="plant.price"
+          :is-add-to-cart="plant.isAddToCart"
         />
       </div></main
   ></container>
