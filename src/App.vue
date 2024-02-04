@@ -7,17 +7,130 @@ import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 import Feedback from './components/Feedback.vue'
 import Drawer from './components/Drawer.vue'
+import Filter from './components/Filter.vue'
+import AllProducts from './components/AllProducts.vue'
+import { ref } from 'vue'
+
+const products = ref([
+  {
+    id: 1,
+    title: 'Natural Plants',
+    price: 1400,
+    imageUrl: '/plants-1.png',
+    isAddToCart: false
+  },
+  {
+    id: 2,
+    title: 'Plant Accessories',
+    price: 900,
+    imageUrl: '/plants-2.png',
+    isAddToCart: true
+  },
+  {
+    id: 3,
+    title: 'Artificial Plants',
+    price: 3500,
+    imageUrl: '/plants-3.png',
+    isAddToCart: false
+  },
+  {
+    id: 1,
+    title: 'Natural Plants',
+    price: 1400,
+    imageUrl: '/plants-1.png',
+    isAddToCart: false
+  },
+  {
+    id: 2,
+    title: 'Plant Accessories',
+    price: 900,
+    imageUrl: '/plants-2.png',
+    isAddToCart: true
+  },
+  {
+    id: 3,
+    title: 'Artificial Plants',
+    price: 3500,
+    imageUrl: '/plants-3.png',
+    isAddToCart: false
+  },
+  {
+    id: 1,
+    title: 'Natural Plants',
+    price: 1400,
+    imageUrl: '/plants-1.png',
+    isAddToCart: false
+  },
+  {
+    id: 2,
+    title: 'Plant Accessories',
+    price: 900,
+    imageUrl: '/plants-2.png',
+    isAddToCart: true
+  },
+  {
+    id: 3,
+    title: 'Artificial Plants',
+    price: 3500,
+    imageUrl: '/plants-3.png',
+    isAddToCart: false
+  },
+  {
+    id: 1,
+    title: 'Natural Plants',
+    price: 1400,
+    imageUrl: '/plants-1.png',
+    isAddToCart: false
+  },
+  {
+    id: 2,
+    title: 'Plant Accessories',
+    price: 900,
+    imageUrl: '/plants-2.png',
+    isAddToCart: true
+  },
+  {
+    id: 3,
+    title: 'Artificial Plants',
+    price: 3500,
+    imageUrl: '/plants-3.png',
+    isAddToCart: false
+  },
+  {
+    id: 1,
+    title: 'Natural Plants',
+    price: 1400,
+    imageUrl: '/plants-1.png',
+    isAddToCart: false
+  },
+  {
+    id: 2,
+    title: 'Plant Accessories',
+    price: 900,
+    imageUrl: '/plants-2.png',
+    isAddToCart: true
+  },
+  {
+    id: 3,
+    title: 'Artificial Plants',
+    price: 3500,
+    imageUrl: '/plants-3.png',
+    isAddToCart: false
+  },
+])
 </script>
 
 <template>
   <div class="container-snap w-screen h-screen overflow-x-hidden text-lg text-custom-black">
     <Header />
-    <TopContent />
-    <BestSelling />
-    <AboutUs />
-    <Categories />
-    <Feedback />
-    <Footer />
+    <Filter />
+    <AllProducts :products="products" />
+    <!-- <TopContent /> -->
+    <!-- <BestSelling /> -->
+    <!-- <AboutUs /> -->
+    <!-- <Categories /> -->
+    <!-- <Feedback /> -->
+    <!-- <Footer /> -->
     <!-- <Drawer /> -->
   </div>
 </template>
